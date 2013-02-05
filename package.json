@@ -1,0 +1,42 @@
+{
+  "name": "introspective",
+  "description": "Update and restart your app",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jrussell-ivantage/introspective",
+  "author": {
+    "name": "Justin",
+    "email": "jrussell@ivantagehealth.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrussell-ivantage/introspective.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jrussell-ivantage/introspective/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jrussell-ivantage/introspective/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/introspective",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit",
+		"go": "node lib/restart.js"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "0.1.1rc6",
+    "grunt-contrib-nodeunit": "0.1.2rc6",
+    "grunt-contrib-watch": "0.2.0rc5",
+    "grunt": "0.4.0rc6"
+  },
+  "keywords": [],
+  "dependencies": {
+    "npm": "~1.2.4",
+    "async": "~0.2.1"
+  }
+}
