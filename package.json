@@ -1,6 +1,6 @@
 {
   "name": "introspective",
-  "description": "Update and restart your app",
+  "description": "Update and restart your app... from your app",
   "version": "0.2.0",
   "homepage": "https://github.com/jrussell-ivantage/introspective",
   "author": {
