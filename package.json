@@ -1,26 +1,26 @@
 {
-  "name": "introspective",
+  "name": "evolver",
   "description": "Update and restart your app... from your app",
   "version": "0.2.0",
-  "homepage": "https://github.com/jrussell-ivantage/introspective",
+  "homepage": "https://github.com/jrussell-ivantage/evolver",
   "author": {
     "name": "Justin",
     "email": "jrussell@ivantagehealth.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jrussell-ivantage/introspective.git"
+    "url": "https://github.com/jrussell-ivantage/evolver.git"
   },
   "bugs": {
-    "url": "https://github.com/jrussell-ivantage/introspective/issues"
+    "url": "https://github.com/jrussell-ivantage/evolver/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/jrussell-ivantage/introspective/blob/master/LICENSE-MIT"
+      "url": "https://github.com/jrussell-ivantage/evolver/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/introspective",
+  "main": "lib/evolver",
   "engines": {
     "node": ">= 0.6.0"
   },

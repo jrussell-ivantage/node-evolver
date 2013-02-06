@@ -1,6 +1,6 @@
 'use strict';
 
-var introspective = require('../lib/introspective.js');
+var evolver = require('../lib/evolver.js');
 
 /*
   ======== A Handy Little Nodeunit Reference ========

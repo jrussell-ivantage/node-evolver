@@ -1,13 +1,13 @@
-# introspective
+# evolver
 
 Update and restart your app
 
 ## Getting Started
-Install the module with: `npm install introspective`
+Install the module with: `npm install evolver`
 
 ```javascript
-var introspective = require('introspective');
-introspective.awesome(); // "awesome"
+var evolver = require('evolver');
+evolver.awesome(); // "awesome"
 ```
 
 ## Documentation
