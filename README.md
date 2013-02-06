@@ -1,6 +1,6 @@
 # evolver
 
-Update and restart your app
+Update and restart your app... from your app.
 
 ## Getting Started
 Install the module with: `npm install evolver`
