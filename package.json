@@ -1,7 +1,7 @@
 {
   "name": "evolver",
   "description": "Update and restart your app... from your app",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "homepage": "https://github.com/jrussell-ivantage/evolver",
   "author": {
     "name": "Justin",
@@ -25,8 +25,7 @@
     "node": ">= 0.6.0"
   },
   "scripts": {
-    "test": "grunt nodeunit",
-		"go": "node lib/restart.js"
+    "test": "grunt nodeunit"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "0.1.1rc6",
