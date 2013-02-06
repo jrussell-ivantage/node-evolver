@@ -1,7 +1,7 @@
 {
   "name": "evolver",
   "description": "Update and restart your app... from your app",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/jrussell-ivantage/evolver",
   "author": {
     "name": "Justin",
@@ -36,7 +36,6 @@
   },
   "keywords": [],
   "dependencies": {
-    "npm": "1.2.3",
     "async": "~0.2.1"
   }
 }
