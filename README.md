@@ -38,8 +38,31 @@ all the node modules you're dependent on. Finally the callback is run, if an
 error was encountered it will be passed here otherwise there are no parameters
 give to the callback function.
 
-## TODO ##
+#### Example
+Express applications can drop in a bootstrap file to make use of evolver:
+
+```javascript
+var evolver = require( "evolver" );
+
+// -----------------------------------------------------
+// Make sure we're update to date
+// -----------------------------------------------------
+evolver.update( __dirname, function() {
+	// -----------------------------------------------------
+	// Make sure no other instances are running
+	// -----------------------------------------------------
+	evolver.only();
+
+	// -----------------------------------------------------
+	// Start the application
+	// -----------------------------------------------------
+	require( "./app" );
+});
+```
+
+## TODO
 * Formal tests
+* Work around the npm error displayed when instances are taken down with `only`
 
 ## Contributing
 In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](http://gruntjs.com/).
