@@ -30,8 +30,8 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', [
-		'jshint'
-//		'nodeunit'
-	]);
+    'jshint'
+//    'nodeunit'
+  ]);
 
 };

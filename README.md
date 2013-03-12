@@ -26,8 +26,8 @@ issues you must tell the update method where your project root lives:
 ```javascript
 var evolver = require( "evolver" );
 evolver.update( __dirname, function( err ) {
-	if( err ) throw err;
-	console.log( "Update has finished!" );
+  if( err ) throw err;
+  console.log( "Update has finished!" );
 });
 ```
 
@@ -52,22 +52,22 @@ var evolver = require( "evolver" );
 // Make sure we're update to date
 // -----------------------------------------------------
 evolver.update( __dirname, function( err ) {
-	// -----------------------------------------------------
-	// Errors usually occur when
+  // -----------------------------------------------------
+  // Errors usually occur when
   // * The repo type cannot be determined
   // * The git, svn, etc. commands aren't visible to evolver
-	// -----------------------------------------------------
+  // -----------------------------------------------------
   if( err ) throw err; 
 
-	// -----------------------------------------------------
-	// Make sure no other instances are running
-	// -----------------------------------------------------
-	evolver.only();
+  // -----------------------------------------------------
+  // Make sure no other instances are running
+  // -----------------------------------------------------
+  evolver.only();
 
-	// -----------------------------------------------------
-	// Start the application
-	// -----------------------------------------------------
-	require( "./app" );
+  // -----------------------------------------------------
+  // Start the application
+  // -----------------------------------------------------
+  require( "./app" );
 });
 ```
 
