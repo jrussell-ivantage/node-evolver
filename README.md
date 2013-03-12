@@ -17,8 +17,8 @@ to get rid of previous instance (only kills processes that triggered a restart).
 
 #### Update
 Evolver can update your app's code base programmatically! Evolver is not
-intended to be a replacement for traditional CI tools but can be an aid in
-situations when your options are limited.
+intended to be a replacement for any part of your CI solution but can be an aid
+in situations when your options are limited.
 
 To update your app's code base use `evolver.update`. To avoid any... horrible
 issues you must tell the update method where your project root lives:
@@ -36,7 +36,11 @@ and svn), and a repo url. Once the latest and greatest changes have been fetched
 from your app's repo evolver will issue an `npm install` to make sure you have
 all the node modules you're dependent on. Finally the callback is run, if an
 error was encountered it will be passed here otherwise there are no parameters
-give to the callback function.
+given to the callback function.
+
+NOTE: The appropriate version control executables must be included in your path.
+If you're trying to update a git repo and typing `git` at the command line does
+nothing... whelp.
 
 #### Example
 Express applications can drop in a bootstrap file to make use of evolver:
@@ -47,7 +51,14 @@ var evolver = require( "evolver" );
 // -----------------------------------------------------
 // Make sure we're update to date
 // -----------------------------------------------------
-evolver.update( __dirname, function() {
+evolver.update( __dirname, function( err ) {
+	// -----------------------------------------------------
+	// Errors usually occur when
+  // * The repo type cannot be determined
+  // * The git, svn, etc. commands aren't visible to evolver
+	// -----------------------------------------------------
+  if( err ) throw err; 
+
 	// -----------------------------------------------------
 	// Make sure no other instances are running
 	// -----------------------------------------------------
